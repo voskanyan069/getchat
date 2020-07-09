@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/settings_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:text="Settings"
+        android:textColor="@color/colorText_dark"
+        android:fontFamily="@font/righteous"
+        android:textSize="45sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/settings_text"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setting_themes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textSize="30sp"
+            android:textColor="@color/colorText_dark"
+            android:fontFamily="@font/righteous"
+            android:text="Themes"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30sp" />
+
+        <TextView
+            android:id="@+id/setting_app_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textSize="30sp"
+            android:textColor="@color/colorText_dark"
+            android:fontFamily="@font/righteous"
+            android:text="App Info"/>
+
+        <TextView
+            android:id="@+id/setting_grp_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/colorText_dark"
+            android:fontFamily="@font/righteous"
+            android:text="Group Info"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60sp" />
+
+        <TextView
+            android:id="@+id/setting_creators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textSize="30sp"
+            android:textColor="@color/colorText_dark"
+            android:fontFamily="@font/righteous"
+            android:text="Creators"/>
+
+        <TextView
+            android:id="@+id/setting_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textSize="30sp"
+            android:textColor="@color/colorText_dark"
+            android:fontFamily="@font/righteous"
+            android:text="Feedback"/>
+
+        <TextView
+            android:id="@+id/setting_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:textSize="30sp"
+            android:textColor="@color/colorText_dark"
+            android:fontFamily="@font/righteous"
+            android:text="Log Out"/>
+    </LinearLayout>
+
+</RelativeLayout>

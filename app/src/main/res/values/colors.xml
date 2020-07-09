@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E7E4EB</color>
+    <color name="colorPrimaryDark">#1F2128</color>
+    <color name="colorAccent">#FF034F</color>
+
+    <!--    List Items Color    -->
+
+<!--        Dark        -->
+    <color name="colorUserName_dark">#B8ADAD</color>
+    <color name="colorDate_dark">#B8ADAD</color>
+    <color name="colorText_dark">#DAD4D4</color>
+
+<!--        Light        -->
+    <color name="colorUserName">#706D6D</color>
+    <color name="colorDate">#706D6D</color>
+    <color name="colorText">#2E2F35</color>
+
+
+</resources>

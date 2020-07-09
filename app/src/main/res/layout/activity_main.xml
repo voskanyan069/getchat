@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/grp_name"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/colorText_dark"
+        android:overScrollMode="never"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:fontFamily="@font/righteous"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80sp"
+        android:layout_marginStart="20sp" />
+
+    <ImageView
+        android:id="@+id/btn_settings"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/ic_settings"
+        android:padding="5sp"
+        android:background="@drawable/edittext_border"
+        android:contentDescription="Settings"
+        tools:ignore="HardcodedText" />
+
+    <ListView
+        android:id="@+id/messageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_layout"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginTop="80sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="15sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/emoji_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/emoji"
+        android:layout_margin="10dp"
+        android:contentDescription="Emoji"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/btn_send"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_send_btn"
+        android:contentDescription="Send"
+        tools:ignore="HardcodedText,MissingPrefix" />
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/message_hint"
+        android:fontFamily="@font/righteous"
+        android:textColor="@color/colorText_dark"
+        android:textColorHint="#E57373"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_send"
+        android:layout_toRightOf="@id/emoji_btn"
+        android:layout_toStartOf="@id/btn_send"
+        android:layout_toEndOf="@id/emoji_btn"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_border" />
+
+</RelativeLayout>
