@@ -54,7 +54,7 @@
             android:textSize="20sp"
             android:textColor="@color/colorText_dark"
             android:fontFamily="@font/righteous"
-            android:text="Andranik Voskanyan\nandranik.voskanyan@realschool.am"/>
+            android:text="Andranik Voskanyan\nandranik.voskanyan.gp@gmail.com"/>
 
     </LinearLayout>
 </RelativeLayout>
